@@ -7,6 +7,7 @@ body {
     display: flex;
     border: 2px solid green;
     width: 80%;
+    height: 20%;
     justify-content: center;
     background-color: black;
     color: white;
@@ -25,16 +26,17 @@ body {
 .half-width h1 {
     position: relative;
     margin-top: 30px;
+    /* border: 2px solid red; */
 }
 
 .half-width p {
     position: relative;
-    bottom: 45px;
+    bottom: 5%;
 }
 
 .half-width button {
     position: relative;
-    bottom: 45px;
+    bottom: 5%
 }
 
 .arrow-sign {
@@ -54,13 +56,18 @@ body {
     cursor: pointer;
 }
 
+
+.watch a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .watch:hover {
     transform: scale(1.25);
     transition: transform 0.5s ease-in;
     color: gold;
     background-color: rebeccapurple;
 }
-
 
 .half-width {
     padding-left: 10%;
@@ -78,9 +85,11 @@ body {
 }
 
 
+
 .options {
     margin: 0 150px;
-    margin-top: 120px;
+    margin-top: 105px;
+    margin-left: 10%;
     height: 312px;
     width: 312px;
     background-color: black;
@@ -89,14 +98,16 @@ body {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 
 
 .choose-1,
 .choose-2 {
-    cursor: pointer;
     width: 252px;
     height: 64px;
+    cursor: pointer;
     font-weight: 400;
     font-size: larger;
     text-align: center;
@@ -131,6 +142,27 @@ body {
     font-weight: 700;
 }
 
+
+.choose-1 a {
+    width: 252px;
+    height: 64px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.choose-2 a {
+    width: 252px;
+    height: 64px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .choose-3 a {
     width: 252px;
     height: 64px;
@@ -139,4 +171,317 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+.blog-posts {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    top: 95px;
+    right: 135px;
+}
+
+.upcoming-posts {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    top: 95px;
+    right: 135px;
+}
+
+
+.single {
+    border: 0.2px solid gainsboro;
+    border-radius: 10px;
+    margin: 10px 10px;
+    width: 92.5%;
+    height: 95%;
+}
+
+.single:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.single2 {
+    border: 0.2px solid gainsboro;
+    border-radius: 10px;
+    margin: 10px 10px;
+    width: 92.5%;
+    height: 90%;
+}
+
+.single2:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.single button {
+    width: 100px;
+    height: 32px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    font-weight: 700;
+    cursor: alias;
+}
+
+.single button:hover {
+    transform: scale(1.03);
+}
+
+.single img {
+    width: 100%;
+}
+
+.options-blog-posts {
+    display: flex;
+}
+
+.time {
+    margin-right: 35px;
+    position: relative;
+    bottom: 3.3px;
+}
+
+.chat {
+    position: relative;
+    bottom: 3.3px;
+}
+
+.writings {
+    margin-left: 13px;
+}
+
+.foot {
+    height: 444px;
+    margin-top: 200px;
+    background-color: black;
+    color: whitesmoke;
+    margin-left: 0;
+    margin-right: 0;
+
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    font-size: 16px;
+    color: silver;
+    width: 100%;
+}
+
+.info p {
+    /* border: 2px solid red; */
+    margin: 10px;
+}
+
+.info2 {
+    display: none;
+}
+
+.info3 {
+    display: none;
+}
+
+.flag {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    padding: 10px 10px 10px 10px;
+}
+
+.flag img {
+    width: 100%;
+    position: relative;
+    top: 20px;
+}
+
+.vs {
+    font-weight: 900;
+    position: relative;
+    top: 60%;
+    margin: 0 auto;
+}
+
+.single2 h1 {
+    text-align: center;
+}
+
+.single2 p {
+    color: silver;
+    font-size: small;
+    text-align: center;
+}
+
+@media screen and (max-width: 1072px) {
+    .options-blog-posts {
+        display: block;
+    }
+
+    .options {
+        margin: 10px 10px 10px 10px;
+        margin-top: 50px;
+        margin-left: 9%;
+        height: 70px;
+        width: 83%;
+        background-color: white;
+        border-radius: 15px;
+        color: whitesmoke;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .choose-1,
+    .choose-2,
+    .choose-3 {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .choose-1 a,
+    .choose-2 a,
+    .choose-3 a {
+        width: 100%;
+    }
+
+    .blog-posts {
+        width: 85%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        position: relative;
+        top: 30px;
+        left: 8%;
+    }
+
+    .upcoming-posts {
+        width: 85%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        position: relative;
+        top: 30px;
+        left: 8%;
+    }
+
+    .info {
+        display: none;
+    }
+
+    .info2 {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        font-size: 16px;
+        color: silver;
+        width: 100%;
+    }
+
+    .info2 p {
+        /* border: 2px solid red; */
+        margin: 10px;
+    }
+
+    .info3 {
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+        color: silver;
+        width: 100%;
+    }
+
+    .info3 p {
+        /* border: 2px solid red; */
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 800px) {
+    .options-blog-posts {
+        display: block;
+    }
+
+    .options {
+        margin: 10px 10px 10px 10px;
+        border: 1px solid gainsboro;
+        margin-top: 30px;
+        margin-left: 9%;
+        height: 230px;
+        width: 83%;
+        background-color: white;
+        border-radius: 15px;
+        color: whitesmoke;
+        display: block;
+
+    }
+
+    .choose-1 {
+        width: 60%;
+        margin: 10px auto;
+    }
+
+    .choose-2 {
+        width: 50%;
+        margin: 10px auto;
+    }
+
+    .choose-3 {
+        width: 50%;
+    }
+
+    .choose-1 a,
+    .choose-2 a,
+    .choose-3 a {
+        width: 100%;
+    }
+
+    .blog-posts {
+        width: 85%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        position: relative;
+        top: 200px;
+        left: 8%;
+    }
+
+    .upcoming-posts {
+        width: 85%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        position: relative;
+        top: 30px;
+        left: 8%;
+    }
+
+    .info {
+        display: none;
+    }
+
+    .info2 {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        font-size: 16px;
+        color: silver;
+        width: 100%;
+    }
+
+    .info2 p {
+        /* border: 2px solid red; */
+        margin: 10px;
+    }
+
+    .info3 {
+        display: flex;
+        justify-content: center;
+        font-size: 16px;
+        color: silver;
+        width: 100%;
+    }
+
+    .info3 p {
+        /* border: 2px solid red; */
+        margin: 10px;
+    }
 }
